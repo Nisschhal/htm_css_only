@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 80%;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -22,6 +22,7 @@ body {
 
 .main-header {
   background-color: #f7f7f7;
+  background-color: #ff0000;
   /* padding: 20px;
   padding-left: 40px;
   padding-right: 40px; */
@@ -92,7 +93,7 @@ p {
 
 ul,
 ol {
-  margin-left: 50px;
+  margin-left: 10px;
   margin-bottom: 20px;
 }
 
@@ -267,3 +268,34 @@ nav p {
 } */
 
 /* FLOAT */
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+article {
+  width: 60%;
+  float: left;
+}
+
+aside {
+  width: 30%;
+  float: right;
+}
+
+footer {
+  clear: left;
+}
+
+li a:link {
+  display: block;
+}
